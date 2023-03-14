@@ -1,0 +1,115 @@
+:root {
+    --color-dark-gray: #42515b;
+    --color-bright: rgb(245, 245, 245);
+    --text-color-blue: rgb(65, 65, 99);
+    --color-aqua: #3fcfcfb2;
+    --font-size-title-h2: 35px;
+    --font-size-paragraph: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 3px;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-dark-gray);
+    padding: 5px 0 10px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    background-color: var(--color-aqua);
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    width: 150%;
+    text-align: right;
+}
+
+.menu nav a {
+    color: var(--color-aqua);
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+main {
+    background-color: var(--color-bright);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    background-color: var(--color-aqua);
+    font-size: 20px;
+    padding: 10px 0 10px;
+}
+
+.container img {
+    height: 30vh;
+    width: 200vh;
+}
+
+.row{
+    display: flex;
+}
+
+.side {
+    display: flex;
+    font-family: sans-serif;
+    align-items: flex-start;
+    justify-content: end;
+    padding: 10px 5px 10px 5px;
+    /* margin: 0 15px 0 60px; */
+    flex: 1;
+}
+
+.side-title h2 {
+    font-size: var(--font-size-title-h2);
+    color: var(--text-color-blue);
+    text-align: right;
+}
+
+.article {
+    font-size: var(--font-size-paragraph);
+    color: var(--text-color-blue);
+    line-height: 20px;
+    border-left: 3px solid var(--text-color-blue);
+    flex: 6;
+    padding: 10px 10px 10px 10px;
+}
+
+/* .work{
+    display: flex;
+    align-items: flex-start;
+}
+
+.work-title h2{
+    font-size: var(--font-size-title-h2);
+    color: var(--text-color-blue);
+    border-right: 3px solid var(--text-color-blue);
+    width: 150px;
+    height: 600px;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+
+.line-two{
+    border:  1px solid black;
+    display: flex;
+} */

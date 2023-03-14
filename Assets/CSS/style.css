@@ -1,0 +1,30 @@
+:root {
+    --color-dark-gray: #42515b;
+    --color-bright: rgb(245, 245, 245);
+    --color-aqua: #3fcfcfb2;
+    --text-color-blue: rgb(50, 50, 83);
+    --font-size-title-h2: 35px;
+    --font-size-paragraph: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 40px;
+    background-color: var(--color-dark-gray)
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
