@@ -29,3 +29,4 @@ I was able to pratice the recently learned subjects: flexbox, media queries, and
 
 ![Screenshot of deployed application](/Assets/Screenshot.png)
 
+[Link deployed application.](https://elisamarchete.github.io/Challenge02-Advanced-css/)
