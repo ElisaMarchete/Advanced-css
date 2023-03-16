@@ -45,12 +45,33 @@ h1 {
 
 main {
     background-color: var(--color-bright);
+    width: 100%;
 }
 
 .container {
+    display: flex;
     position: relative;
     text-align: center;
 }
+
+.mypicture{
+    margin-top:  10px;
+    align-items: center;
+    border-radius: 55%;
+    justify-content: space-around;
+    border: 2px solid var(--color-aqua);
+    flex: 1;
+}
+
+.header-image{
+    margin-top:  10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: start;
+    flex: 6;
+    
+}
+
 
 .subtitle {
     position: absolute;
@@ -102,11 +123,20 @@ main {
     display: flex;
     position: relative;
     text-align: center;
+    
 }
 
 .layout-center {
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     flex: 1;
+}
+
+.layout-right,
+.layout-left {
+    margin: 10px 10px 0px 10px;
+    flex: 2;
+    position: relative;
+    text-align: center;
 }
 
 .text-block {
@@ -120,17 +150,15 @@ main {
     font-size: var(--font-size-image-big);
 }
 
-.layout-right,
-.layout-left {
-    margin: 10px;
-    flex: 2;
-    position: relative;
-    text-align: center;
-}
-
-.image>img {
+.image >a >img {
     width: 100%;
     border: 2.0px solid var(--color-aqua);
+    opacity: 0.6;
+}
+
+.image >a >img:hover{
+    opacity: 0.9; 
+    transition: .5s ease;
 }
 
 ul {
