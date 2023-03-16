@@ -24,7 +24,6 @@ I was able to pratice the recently learned subjects: flexbox, media queries, and
 - Mobile Friendly or Responsive Design
 
 
-
 ## Screenshot and link for the deployed application
 
 ![Screenshot of deployed application](/Assets/Screenshot.png)
