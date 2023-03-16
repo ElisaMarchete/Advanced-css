@@ -3,7 +3,7 @@
     --color-bright: rgb(245, 245, 245);
     --text-color-blue: rgb(65, 65, 99);
     --color-aqua: #3fcfcfb2;
-    --font-size-title-h2: 30px;
+    --font-size-title-30: 30px;
     --font-size-paragraph: 15px;
     --font-size-image-big: 23px;
     --font-size-image-small: 28px;
@@ -37,7 +37,7 @@ h1, .subtitle, .text-block {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: var(--font-size-title-30);
     padding: 5px 5px 5px 5px;
     width: 150%;
     text-align: right;
@@ -54,7 +54,12 @@ main footer {
     width: 100%;
 }
 
-.container {
+.container,
+.line-one,
+.line-two,
+.line-three,
+.layout-right,
+.layout-left {
     position: relative;
     text-align: center;
 }
@@ -73,9 +78,10 @@ main footer {
     margin: 0 10px 10px 10px;
 }
 
-
-.subtitle {
+.subtitle, .text-block {
     position: absolute;
+}
+.subtitle {
     bottom: 10px;
     right: 16px;
     font-size: 20px;
@@ -95,7 +101,7 @@ main footer {
 }
 
 .side-title h2 {
-    font-size: var(--font-size-title-h2);
+    font-size: var(--font-size-title-30);
     color: var(--text-color-blue);
     text-align: right;
 }
@@ -110,11 +116,10 @@ main footer {
     margin: 20px 5px 5px 5px;
 }
 
-.line-one,
-.line-two,
-.line-three {
-    position: relative;
-    text-align: center;
+.layout-right,
+.layout-left {
+    margin: 0px 10px 3px 10px;
+    flex: 2;
 }
 
 .layout-center {
@@ -122,16 +127,7 @@ main footer {
     flex: 1;
 }
 
-.layout-right,
-.layout-left {
-    margin: 0px 10px 3px 10px;
-    flex: 2;
-    position: relative;
-    text-align: center;
-}
-
 .text-block {
-    position: absolute;
     padding: 5px 0 5px 0;
     bottom: 40px;
 }
@@ -185,7 +181,6 @@ li {
 
     .menu {
         align-items: flex-start;
-        width: 98%;
     }
 
     li {
@@ -203,11 +198,7 @@ li {
         font-size: 15px;
     }
 
-    .article p {
-        font-size: 10px;
-    }
-
-    .text-block p {
+    .article p, .text-block p {
         font-size: 10px;
     }
 
@@ -222,6 +213,7 @@ li {
         padding-left: 10px;
     }
 }
+
 
 @media screen and (max-width: 450px) {
     .menu {
@@ -238,21 +230,17 @@ li {
         flex-direction: row;
     }
 
-    .subtitle>h3 {
-        font-size: 10px;
-    }
-
-    .text-block h3 {
-        font-size: 10px;
-    }
-
     .text-block p {
-        font-size: 1px;
+        font-size: 5px;
     }
 
     #about-me>h2,
     #work>h2,
-    #contact-me>h2 {
+    #contact-me>h2,
+    .text-block h3,
+    .subtitle>h3,
+    .menu nav a
+     {
         font-size: 10px;
     }
 
@@ -264,16 +252,13 @@ li {
         height: 30vh;
     }
 
-
     .menu h1 {
         align-items: flex-start;
         font-size: 20px;
     }
 
-
     .menu nav a {
         align-items: flex-start;
-        font-size: 10px;
         padding-right: 10px;
     }
 }
