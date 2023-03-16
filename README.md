@@ -22,3 +22,4 @@ I was able to pratice the recently learned subjects: flexbox, media queries, and
 - Internal Links
 - Contact Info
 - Mobile Friendly or Responsive Design
+
