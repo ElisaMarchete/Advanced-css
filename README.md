@@ -23,3 +23,10 @@ I was able to pratice the recently learned subjects: flexbox, media queries, and
 - Contact Info
 - Mobile Friendly or Responsive Design
 
+
+
+## Screenshot and link for the deployed application
+
+![Screenshot of deployed application](/Assets/Screenshot.png)
+
+[Link deployed application.](https://elisamarchete.github.io/Challenge02-Advanced-css/)
