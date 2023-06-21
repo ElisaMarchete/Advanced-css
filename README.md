@@ -1,5 +1,5 @@
-# Challenge02-Advanced-css
-Advanced CSS
+# Portfolio
+Challenge02 - Advanced CSS
 
 
 ## Description
